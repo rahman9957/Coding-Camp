@@ -1,0 +1,22 @@
+[
+    {
+        "nomor_tiket": "BH001",
+        "nama_penumpang": "Rahman",
+        "bus": "Gunung Harta"
+    },
+    {
+        "nomor_tiket": "BH002",
+        "nama_penumpang": "Tiara",
+        "bus": "Damri"
+    },
+    {
+        "nomor_tiket": "BH003",
+        "nama_penumpang": "Rizki",
+        "bus": "Gunung Harta"
+    },
+    {
+        "nomor_tiket": "BH004",
+        "nama_penumpang": "Aini",
+        "bus": "Damri"
+    }
+]
