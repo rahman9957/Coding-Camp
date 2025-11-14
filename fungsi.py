@@ -1,24 +1,16 @@
-from ast import main
-from bs4 import BeautifulSoup
-import requests 
+import os
 
-result = requests.get("https://www.detik.com/")
+def buat_direktori(nama_folder):
+    if not os.path.exists(nama_folder):
+        os.makedirs(nama_folder)
 
-print(result)
+def apakah_file_ada(path):
+    return os.path.exists(path)
 
-print(result.encoding)
-print(result.status_code)
-print(result.elapsed)
-print(result.url)
-print(result.history)
-print(result.headers['Content-Type'])
+def buat_file_baru(path):
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("")
 
-def main_scraper(url,directory):
-    #fungsi.create.directory(directory)
-    source_code = requests.get(url)
-    source_text = source_code.text
-    print(source_text)
-
-main_scraper("https://www.detik.com/","Hasil")
-
-#simpan html
+def tulis_ke_file(path, isi):
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(isi + "\n")
